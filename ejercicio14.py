@@ -1,13 +1,9 @@
-conv_pie_cm = 38.48
-pulgada_a_cm = 2.54 
+in_per_feet = 12
+cm_per_in = 2.54
 
-pies = float(input("Feet: "))
-pulgadas = float(input("Inches: "))
+feet = int(input("Numero en pies: "))
+inches = int(input("Numero en inches: "))
 
-cm_1 = pies * conv_pie_cm
-cm_2 = pulgadas * pulgada_a_cm
+cm = (feet * in_per_feet + inches) * cm_per_in
 
-total_en_cm = cm_1 + cm_2
-
-print ("Tu altura es de", total_en_cm, "cm")
-
+print ("Tu medida es", cm, "centimetros")
